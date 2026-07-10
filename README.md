@@ -3,3 +3,6 @@
 Versión con retratos profesionales, botones institucionales “Solicitar una entrevista”, corrección de navegación y sección de reseñas vinculada a Google Maps.
 
 Publicación: subir todos los archivos a la raíz del repositorio de GitHub Pages y reemplazar los existentes.
+
+
+Actualización: se reemplazaron las fotografías del equipo por las nuevas imágenes aprobadas.
