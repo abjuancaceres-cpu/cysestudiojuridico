@@ -272,3 +272,23 @@ h1,h2,h3{font-family:"Playfair Display",serif}
   .profile-copy blockquote{font-size:.98rem}
   .review-panel{padding:24px 18px}
 }
+
+/* Cierre Fase 1: retratos profesionales, CTA institucional y reseñas Google */
+.team-grid--portrait{align-items:stretch}
+.profile-card--vertical{display:flex;flex-direction:column;padding:0;overflow:hidden;text-align:center;background:linear-gradient(180deg,#1b6656,#124f43)}
+.profile-photo-wrap--landscape{aspect-ratio:4/3;width:100%;max-width:none;margin:0;border:0;border-radius:0;box-shadow:none;background:#efe5d5}
+.profile-card--vertical .profile-copy{padding:30px 32px 34px;display:flex;flex-direction:column;flex:1}
+.profile-copy--center h3,.profile-copy--center p{text-align:center}
+.profile-copy--center h3{font-size:1.75rem}
+.profile-copy--center p{max-width:520px;margin-left:auto;margin-right:auto}
+.profile-card--vertical blockquote{margin-top:auto;text-align:center;border-left:0;border-top:2px solid var(--gold);padding:20px 0 0}
+.google-review-box{max-width:1040px;margin:0 auto;border:1px solid rgba(180,138,58,.35);border-radius:24px;background:#fff;box-shadow:var(--shadow);padding:38px;display:grid;grid-template-columns:1.2fr 1fr;gap:36px;align-items:center}
+.google-review-badge span{display:block;color:var(--gold);font-size:1.5rem;letter-spacing:.12em;margin-bottom:10px}
+.google-review-badge strong{display:block;font-family:"Playfair Display",serif;color:var(--green);font-size:clamp(1.55rem,3vw,2.15rem);margin-bottom:10px}
+.google-review-badge p{margin:0;color:var(--muted)}
+.google-review-actions{display:grid;gap:12px}
+.google-review-actions .btn{width:100%}
+.header-cta{white-space:nowrap}
+@media(max-width:1180px){.header-cta{font-size:.72rem;padding:0 12px}}
+@media(max-width:980px){.google-review-box{grid-template-columns:1fr}.profile-card--vertical .profile-copy{padding:26px 24px 30px}}
+@media(max-width:560px){.profile-photo-wrap--landscape{aspect-ratio:1/1}.profile-photo{object-position:center 28%}.google-review-box{padding:24px 18px}.header-cta{font-size:.64rem;padding:0 9px;max-width:145px;text-align:center;line-height:1.1}}
