@@ -4,5 +4,4 @@ Versión con retratos profesionales, botones institucionales “Solicitar una en
 
 Publicación: subir todos los archivos a la raíz del repositorio de GitHub Pages y reemplazar los existentes.
 
-
-Actualización: se reemplazaron las fotografías del equipo por las nuevas imágenes aprobadas.
+Actualización: se eliminaron las líneas circulares decorativas de la portada y se dejó un fondo más limpio.
