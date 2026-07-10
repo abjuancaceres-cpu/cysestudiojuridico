@@ -28,3 +28,13 @@ if (menuButton && nav) {
 
 const year = document.getElementById('year');
 if (year) year.textContent = new Date().getFullYear();
+
+// Garantiza que los enlaces “Inicio” vuelvan realmente al comienzo,
+// incluso con el encabezado fijo y desde cualquier sección.
+document.querySelectorAll('[data-scroll-top]').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    history.replaceState(null, '', window.location.pathname);
+  });
+});

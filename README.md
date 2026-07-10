@@ -1,14 +1,11 @@
-# CyS Estudio Jurídico — Cierre Fase 1
+# CyS Estudio Jurídico — Fase 1 final
 
-Sitio institucional estático publicado con GitHub Pages.
+Versión institucional con diseño responsive, fotografías reales del equipo, sección de recomendaciones, navegación corregida y contacto por WhatsApp.
 
-## Archivos
-- `index.html`
-- `styles.css`
-- `script.js`
-- `assets/logo-cys.png`
-- `CNAME`
-- `robots.txt`
-- `sitemap.xml`
+## Publicación
 
-Dominio: https://cysestudiojuridico.ar
+Subir todo el contenido de esta carpeta a la raíz del repositorio de GitHub Pages, reemplazando los archivos existentes.
+
+## Pendiente opcional
+
+Cuando esté disponible el enlace directo de Google Business Profile, agregar los botones “Ver reseñas en Google” y “Dejar una reseña” en la sección `#recomendaciones`.

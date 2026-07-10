@@ -39,7 +39,7 @@
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
   <header class="site-header" id="inicio">
-    <a class="brand" href="#inicio" aria-label="Ir al inicio de CyS Estudio Jurídico">
+    <a class="brand" href="#inicio" data-scroll-top aria-label="Ir al inicio de CyS Estudio Jurídico">
       <img src="assets/logo-cys.png" alt="Logo de CyS Estudio Jurídico" width="159" height="159" />
       <span class="brand-copy">
         <strong>Cáceres &amp; Silva</strong>
@@ -52,11 +52,12 @@
     </button>
 
     <nav class="nav" id="menu-principal" aria-label="Navegación principal">
-      <a href="#inicio">Inicio</a>
+      <a href="#inicio" data-scroll-top>Inicio</a>
       <a href="#nosotros">Nosotros</a>
       <a href="#servicios">Servicios</a>
       <a href="#metodo">Cómo trabajamos</a>
       <a href="#preguntas">Preguntas frecuentes</a>
+      <a href="#recomendaciones">Recomendaciones</a>
       <a href="#contacto">Contacto</a>
     </nav>
 
@@ -151,17 +152,47 @@
       </div>
 
       <div class="team-grid">
-        <article class="profile-card">
-          <div class="profile-avatar" aria-hidden="true">JC</div>
-          <h3>Dr. Juan Cáceres</h3>
-          <p>Especializado en Derecho de Familia, Sucesiones y Jubilaciones.</p>
+        <article class="profile-card profile-card--photo">
+          <div class="profile-photo-wrap">
+            <img class="profile-photo profile-photo--juan" src="assets/juan.webp" alt="Dr. Juan Cáceres, abogado de CyS Estudio Jurídico" width="825" height="1100" loading="lazy" decoding="async" />
+          </div>
+          <div class="profile-copy">
+            <h3>Dr. Juan Cáceres</h3>
+            <p>Especializado en Derecho de Familia, Sucesiones y Jubilaciones.</p>
+            <blockquote>“Un buen asesoramiento comienza por escuchar y comprender la situación de cada persona.”</blockquote>
+          </div>
         </article>
-        <article class="profile-card">
-          <div class="profile-avatar" aria-hidden="true">AS</div>
-          <h3>Dra. Araceli Silva</h3>
-          <p>Especializada en Derecho Societario, Registro de Marcas, Derecho Laboral y Asesoramiento Empresarial. Además, cuenta con más de diez años de experiencia en liquidación de sueldos y jornales.</p>
+        <article class="profile-card profile-card--photo">
+          <div class="profile-photo-wrap">
+            <img class="profile-photo profile-photo--araceli" src="assets/araceli.webp" alt="Dra. Araceli Silva, abogada de CyS Estudio Jurídico" width="865" height="1100" loading="lazy" decoding="async" />
+          </div>
+          <div class="profile-copy">
+            <h3>Dra. Araceli Silva</h3>
+            <p>Especializada en Derecho Societario, Registro de Marcas, Derecho Laboral y Asesoramiento Empresarial. Además, cuenta con más de diez años de experiencia en liquidación de sueldos y jornales.</p>
+            <blockquote>“Trabajamos para que cada decisión jurídica pueda tomarse con claridad y seguridad.”</blockquote>
+          </div>
         </article>
       </div>
+    </section>
+
+    <section class="section reviews" id="recomendaciones" aria-labelledby="titulo-recomendaciones">
+      <div class="section-heading">
+        <p class="eyebrow">Historias de confianza</p>
+        <h2 id="titulo-recomendaciones">La experiencia de quienes confiaron en nosotros</h2>
+        <p>Cada caso representa una historia distinta. Valoramos profundamente la confianza de nuestros clientes y sus comentarios nos ayudan a seguir mejorando.</p>
+      </div>
+      <div class="review-panel">
+        <div class="review-copy">
+          <span class="review-stars" aria-hidden="true">★★★★★</span>
+          <h3>¿Trabajaste con CyS Estudio Jurídico?</h3>
+          <p>Tu recomendación puede ayudar a otras personas a dar el primer paso y encontrar acompañamiento profesional.</p>
+        </div>
+        <div class="review-actions">
+          <a class="btn primary" href="https://wa.me/5491134005804?text=Hola%20CyS%20Estudio%20Jur%C3%ADdico%2C%20quiero%20compartir%20una%20recomendaci%C3%B3n%20sobre%20mi%20experiencia" target="_blank" rel="noopener noreferrer">Compartir mi experiencia</a>
+          <a class="btn secondary" href="https://www.instagram.com/cys.estudiojuridico/" target="_blank" rel="noopener noreferrer">Conocenos en Instagram</a>
+        </div>
+      </div>
+      <!-- Cuando esté disponible el enlace directo de Google Business, reemplazar o sumar aquí los botones “Ver reseñas en Google” y “Dejar una reseña”. -->
     </section>
 
     <section class="section why" aria-labelledby="titulo-elegirnos">
@@ -246,6 +277,7 @@
       <a href="#servicios">Servicios</a>
       <a href="#nosotros">Nosotros</a>
       <a href="#preguntas">Preguntas frecuentes</a>
+      <a href="#recomendaciones">Recomendaciones</a>
       <a href="#contacto">Contacto</a>
     </div>
     <div class="footer-legal">
