@@ -289,3 +289,21 @@ h1,h2,h3{font-family:"Playfair Display",serif}
 @media(max-width:1180px){.header-cta{font-size:.72rem;padding:0 12px}}
 @media(max-width:980px){.google-review-box{grid-template-columns:1fr}.profile-card--vertical .profile-copy{padding:26px 24px 30px}}
 @media(max-width:560px){.profile-photo-wrap--landscape{aspect-ratio:1/1}.profile-photo{object-position:center 28%}.google-review-box{padding:24px 18px}.header-cta{font-size:.64rem;padding:0 9px;max-width:145px;text-align:center;line-height:1.1}}
+
+
+/* Oculta suavemente el botón del encabezado cuando el CTA principal está visible. */
+.header-cta{
+  transition:opacity .22s ease, transform .22s ease, visibility .22s ease, background-color .2s ease;
+}
+.header-cta.is-context-hidden{
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transform:translateY(-6px);
+}
+
+@media (prefers-reduced-motion: reduce){
+  .header-cta{
+    transition:none;
+  }
+}

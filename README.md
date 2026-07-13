@@ -5,3 +5,6 @@ Versión con retratos profesionales, botones institucionales “Solicitar una en
 Publicación: subir todos los archivos a la raíz del repositorio de GitHub Pages y reemplazar los existentes.
 
 Actualización: se eliminaron las líneas circulares decorativas de la portada y se dejó un fondo más limpio.
+
+
+Actualización: el botón «Solicitar una entrevista» del encabezado se oculta automáticamente cuando el botón principal de la portada está visible.

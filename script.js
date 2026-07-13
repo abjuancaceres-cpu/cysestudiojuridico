@@ -38,3 +38,43 @@ document.querySelectorAll('[data-scroll-top]').forEach((link) => {
     history.replaceState(null, '', window.location.pathname);
   });
 });
+
+
+// Evita repetir el mismo llamado a la acción.
+// Mientras el botón principal “Solicitar una entrevista” está visible,
+// se oculta el botón equivalente del encabezado.
+const headerInterviewCta = document.getElementById('header-interview-cta');
+const heroInterviewCta = document.getElementById('hero-interview-cta');
+
+if (headerInterviewCta && heroInterviewCta) {
+  const updateHeaderCta = (isHeroCtaVisible) => {
+    headerInterviewCta.classList.toggle('is-context-hidden', isHeroCtaVisible);
+    headerInterviewCta.setAttribute('aria-hidden', String(isHeroCtaVisible));
+    headerInterviewCta.tabIndex = isHeroCtaVisible ? -1 : 0;
+  };
+
+  if ('IntersectionObserver' in window) {
+    const interviewObserver = new IntersectionObserver(
+      ([entry]) => updateHeaderCta(entry.isIntersecting),
+      {
+        root: null,
+        // Descuenta aproximadamente la altura del encabezado fijo.
+        rootMargin: '-72px 0px 0px 0px',
+        threshold: 0.35
+      }
+    );
+
+    interviewObserver.observe(heroInterviewCta);
+  } else {
+    // Compatibilidad básica para navegadores antiguos.
+    const checkHeroCtaVisibility = () => {
+      const rect = heroInterviewCta.getBoundingClientRect();
+      const visible = rect.bottom > 72 && rect.top < window.innerHeight;
+      updateHeaderCta(visible);
+    };
+
+    checkHeroCtaVisibility();
+    window.addEventListener('scroll', checkHeroCtaVisibility, { passive: true });
+    window.addEventListener('resize', checkHeroCtaVisibility);
+  }
+}
