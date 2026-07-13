@@ -18,3 +18,25 @@ Se incorporó `servicios.html`, con dos caminos principales:
 - Empresas y Emprendedores.
 
 También se actualizaron los enlaces de Servicios en la página de inicio y el sitemap.
+
+
+## Ajuste de claridad en Servicios
+
+Se simplificó la página de Servicios:
+
+- Hero corto.
+- Dos caminos principales.
+- Tarjetas breves.
+- Un único llamado a la acción final.
+- Se retiraron FAQ, Biblioteca y explicaciones extensas de esta página.
+
+
+## Fase 2 · Nueva arquitectura
+
+La navegación de servicios ahora se divide en:
+
+1. `servicios.html`: elección entre Personas y Familias / Empresas y Emprendedores.
+2. `personas-familias.html`: situaciones personales y familiares.
+3. `empresas-emprendedores.html`: necesidades de empresas y emprendimientos.
+
+La página de inicio también muestra “¿Cómo podemos ayudarte?” en lugar de “Servicios”.
