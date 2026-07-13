@@ -8,3 +8,13 @@ Actualización: se eliminaron las líneas circulares decorativas de la portada y
 
 
 Actualización: el botón «Solicitar una entrevista» del encabezado se oculta automáticamente cuando el botón principal de la portada está visible.
+
+
+## Fase 2 · Sprint 1
+
+Se incorporó `servicios.html`, con dos caminos principales:
+
+- Personas y Familias.
+- Empresas y Emprendedores.
+
+También se actualizaron los enlaces de Servicios en la página de inicio y el sitemap.
