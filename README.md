@@ -40,3 +40,12 @@ La navegación de servicios ahora se divide en:
 3. `empresas-emprendedores.html`: necesidades de empresas y emprendimientos.
 
 La página de inicio también muestra “¿Cómo podemos ayudarte?” en lugar de “Servicios”.
+
+
+## Fase 2 · Integración con la página principal
+
+- Se reemplazó la antigua grilla de servicios de la Home por dos grandes caminos:
+  Personas y Familias / Empresas y Emprendedores.
+- Se mantuvo una vía de orientación para quienes no saben qué área elegir.
+- Se ajustó el botón superior “Solicitar una entrevista”.
+- El menú hamburguesa ahora se activa antes para evitar desbordes en notebooks y zoom 100 %.
