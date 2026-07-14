@@ -49,3 +49,17 @@ La página de inicio también muestra “¿Cómo podemos ayudarte?” en lugar d
 - Se mantuvo una vía de orientación para quienes no saben qué área elegir.
 - Se ajustó el botón superior “Solicitar una entrevista”.
 - El menú hamburguesa ahora se activa antes para evitar desbordes en notebooks y zoom 100 %.
+
+
+## Fase 2 · Parte A · Landing Pages
+
+Se incorporaron seis páginas específicas:
+
+- `familia.html`
+- `sucesiones.html`
+- `jubilaciones.html`
+- `empresas.html`
+- `marcas.html`
+- `payroll.html`
+
+Las páginas intermedias de Personas y Empresas ahora pueden dirigir a estas landings.
