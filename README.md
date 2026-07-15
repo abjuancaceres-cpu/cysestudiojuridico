@@ -63,3 +63,7 @@ Se incorporaron seis páginas específicas:
 - `payroll.html`
 
 Las páginas intermedias de Personas y Empresas ahora pueden dirigir a estas landings.
+
+
+## Fase 2B
+Se incorporaron `guias.html` y `guia-cuota-alimentaria.html`, con buscador, filtros y plantilla editorial.
