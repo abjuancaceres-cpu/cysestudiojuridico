@@ -67,3 +67,14 @@ Las páginas intermedias de Personas y Empresas ahora pueden dirigir a estas lan
 
 ## Fase 2B
 Se incorporaron `guias.html` y `guia-cuota-alimentaria.html`, con buscador, filtros y plantilla editorial.
+
+
+## Fase 2C · SEO técnico profesional
+
+- Datos estructurados LegalService, ProfessionalService, WebSite, BreadcrumbList y FAQPage.
+- Open Graph y Twitter Cards con imagen social propia.
+- robots.txt y sitemap.xml regenerados.
+- canonical, hreflang y directivas avanzadas de robots.
+- Carga diferida de imágenes no críticas.
+- site.webmanifest.
+- Página 404 personalizada.
