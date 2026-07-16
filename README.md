@@ -69,12 +69,17 @@ Las páginas intermedias de Personas y Empresas ahora pueden dirigir a estas lan
 Se incorporaron `guias.html` y `guia-cuota-alimentaria.html`, con buscador, filtros y plantilla editorial.
 
 
-## Fase 2C · SEO técnico profesional
+## Fase 2D · Experiencia Premium
 
-- Datos estructurados LegalService, ProfessionalService, WebSite, BreadcrumbList y FAQPage.
-- Open Graph y Twitter Cards con imagen social propia.
-- robots.txt y sitemap.xml regenerados.
-- canonical, hreflang y directivas avanzadas de robots.
-- Carga diferida de imágenes no críticas.
-- site.webmanifest.
-- Página 404 personalizada.
+Se incorporaron:
+
+- Entrada suave de cada página.
+- Aparición progresiva de secciones y tarjetas al hacer scroll.
+- Encabezado inteligente al desplazarse.
+- Microinteracciones de botones, tarjetas e imágenes.
+- Animación discreta del botón flotante de WhatsApp.
+- Apertura visual mejorada de preguntas frecuentes.
+- Compatibilidad con `prefers-reduced-motion`.
+- Scroll interno compensado para el encabezado fijo.
+
+No se agregaron librerías externas.

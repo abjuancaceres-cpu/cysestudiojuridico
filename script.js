@@ -81,3 +81,143 @@ if (headerInterviewCta && heroInterviewCta) {
 
 // Centro de Ayuda Jurídica: búsqueda y filtros.
 const guideSearch=document.getElementById('guide-search');const guideCards=[...document.querySelectorAll('.guide-card')];const guideFilters=[...document.querySelectorAll('.guide-filter')];const clearGuideSearch=document.getElementById('clear-guide-search');const guideEmpty=document.getElementById('guide-empty');if(guideCards.length){let activeCategory='all';const normalize=v=>v.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');const update=()=>{const q=normalize(guideSearch?.value||'');let count=0;guideCards.forEach(card=>{const okCat=activeCategory==='all'||card.dataset.category===activeCategory;const txt=normalize(`${card.dataset.title||''} ${card.textContent||''}`);const show=okCat&&(!q||txt.includes(q));card.hidden=!show;if(show)count++});if(guideEmpty)guideEmpty.hidden=count!==0};guideFilters.forEach(btn=>btn.addEventListener('click',()=>{activeCategory=btn.dataset.category||'all';guideFilters.forEach(x=>x.classList.toggle('is-active',x===btn));update()}));guideSearch?.addEventListener('input',update);clearGuideSearch?.addEventListener('click',()=>{if(guideSearch){guideSearch.value='';guideSearch.focus()}activeCategory='all';guideFilters.forEach((x,i)=>x.classList.toggle('is-active',i===0));update()});update()}
+
+
+// ==========================================================
+// FASE 2D · EXPERIENCIA PREMIUM
+// ==========================================================
+(() => {
+  const reduceMotion = window.matchMedia(
+    '(prefers-reduced-motion: reduce)'
+  ).matches;
+
+  const body = document.body;
+  const header = document.querySelector('.site-header');
+
+  if (!reduceMotion) {
+    body.classList.add('premium-loading');
+    requestAnimationFrame(() => {
+      body.classList.remove('premium-loading');
+      body.classList.add('premium-ready');
+    });
+  } else {
+    body.classList.add('premium-ready');
+  }
+
+  if (!reduceMotion) {
+    const hero =
+      document.querySelector('.hero') ||
+      document.querySelector('.choice-hero') ||
+      document.querySelector('.area-hero') ||
+      document.querySelector('.landing-hero') ||
+      document.querySelector('.guides-hero') ||
+      document.querySelector('.article-header') ||
+      document.querySelector('.services-simple-hero');
+
+    if (hero) {
+      const heroItems = [
+        hero.querySelector('.eyebrow'),
+        hero.querySelector('h1'),
+        hero.querySelector(
+          '.hero-copy > p:not(.eyebrow), .landing-intro, .article-lead, p:not(.eyebrow)'
+        ),
+        hero.querySelector(
+          '.hero-actions, .guides-search, .article-meta, .area-back'
+        )
+      ].filter(Boolean);
+
+      heroItems.forEach((element, index) => {
+        element.classList.add('premium-hero-enter');
+        if (index > 0) {
+          element.classList.add(
+            `premium-hero-enter--delay-${Math.min(index, 3)}`
+          );
+        }
+      });
+    }
+  }
+
+  const updateHeader = () => {
+    if (!header) return;
+    header.classList.toggle('is-scrolled', window.scrollY > 24);
+  };
+
+  updateHeader();
+  window.addEventListener('scroll', updateHeader, { passive:true });
+
+  const selectors = [
+    'main > section:not(:first-child)',
+    '.home-pathway-card',
+    '.choice-card',
+    '.area-option',
+    '.landing-situation',
+    '.landing-step',
+    '.guide-card',
+    '.team-card',
+    '.review-card',
+    '.service-card',
+    '.article-content > section',
+    '.article-advice-card',
+    '.article-related-grid > a'
+  ];
+
+  const revealElements = Array.from(
+    document.querySelectorAll(selectors.join(','))
+  ).filter((element, index, collection) => collection.indexOf(element) === index);
+
+  revealElements.forEach((element, index) => {
+    element.classList.add('reveal-on-scroll');
+    element.style.setProperty(
+      '--reveal-delay',
+      `${Math.min(index % 4, 3) * 65}ms`
+    );
+  });
+
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    revealElements.forEach((element) => {
+      element.classList.add('is-revealed');
+    });
+  } else {
+    const revealObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-revealed');
+          observer.unobserve(entry.target);
+        });
+      },
+      {
+        threshold:0.12,
+        rootMargin:'0px 0px -8% 0px'
+      }
+    );
+
+    revealElements.forEach((element) => revealObserver.observe(element));
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    const targetId = link.getAttribute('href');
+    if (!targetId || targetId === '#') return;
+
+    link.addEventListener('click', (event) => {
+      const target = document.querySelector(targetId);
+      if (!target) return;
+
+      event.preventDefault();
+
+      const headerHeight = header?.offsetHeight || 0;
+      const top =
+        target.getBoundingClientRect().top +
+        window.scrollY -
+        headerHeight -
+        16;
+
+      window.scrollTo({
+        top,
+        behavior:reduceMotion ? 'auto' : 'smooth'
+      });
+
+      history.replaceState(null, '', targetId);
+    });
+  });
+})();
