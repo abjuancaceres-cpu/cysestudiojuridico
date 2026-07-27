@@ -1,26 +1,28 @@
-# SEO local - CyS Estudio Jurídico
+# ETAPA 1 — SEO de todas las páginas
 
-## Archivos incluidos
-- `index.html`: página de inicio optimizada para búsquedas locales.
-- `robots.txt`: permite el rastreo del sitio e informa la ubicación del sitemap.
+Este paquete agrega SEO individual a las páginas existentes sin modificar el diseño.
+
+## Archivos
+- `seo.js`: titles, descriptions, canonical, Open Graph, Twitter Cards, H1 y Schema.org por página.
+- `APLICAR-SEO.py`: agrega automáticamente la referencia a `seo.js` en todos los HTML.
 - `sitemap.xml`: mapa del sitio actualizado.
 
-## Cómo subirlo a GitHub
-1. Abrí el repositorio `abjuancaceres-cpu/cysestudiojuridico`.
-2. Reemplazá los archivos existentes `index.html`, `robots.txt` y `sitemap.xml`.
-3. Conservá sin cambios las carpetas `assets` y los demás archivos del sitio.
-4. Confirmá el cambio con el mensaje:
-   `Optimiza SEO local y actualiza sitemap`
-5. Esperá la publicación automática de GitHub Pages.
-6. En Google Search Console, inspeccioná la URL principal y solicitá la indexación.
+## Aplicación
+1. Copiá estos tres archivos a la carpeta principal del repositorio.
+2. Ejecutá una sola vez:
+   `python APLICAR-SEO.py`
+3. Subí a GitHub:
+   - todos los HTML modificados;
+   - `seo.js`;
+   - `sitemap.xml`.
+4. No hace falta subir nuevamente `APLICAR-SEO.py`.
+5. Commit sugerido:
+   `Optimiza SEO individual de todas las páginas`
 
-## Enfoque SEO aplicado
-- “Abogados en Berazategui”.
-- “Estudio Jurídico en Berazategui”.
-- Berazategui, Quilmes, Florencio Varela y zona sur.
-- Marcado estructurado `LegalService`.
-- Meta title, meta description y Open Graph.
-- H1 y contenido local.
-- Preguntas frecuentes y zonas de atención.
+## Páginas configuradas
+Home, Servicios, Personas y Familias, Empresas y Emprendedores, Familia,
+Sucesiones, Jubilaciones, Empresas, Marcas, Payroll, Guías y Cuota Alimentaria.
 
-Importante: este paquete optimiza principalmente la página de inicio. Las páginas internas deben trabajarse de forma individual en las próximas etapas.
+## Nota técnica
+La solución conserva el contenido y diseño actuales. Los metadatos y datos
+estructurados se aplican según la URL de cada página.
