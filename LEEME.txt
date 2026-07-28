@@ -1,0 +1,29 @@
+FASE 2 — GUÍA DE SUCESIONES + FORMULARIO DE CONTACTO
+
+Archivos incluidos:
+1. guias.html
+   - Reemplaza el archivo actual.
+   - La tarjeta de Sucesiones ahora enlaza a la nueva guía.
+   - Incorpora formulario general de contacto.
+
+2. guia-sucesiones-pba.html
+   - Archivo nuevo.
+   - Guía SEO completa de sucesiones en Provincia de Buenos Aires.
+   - Incluye formulario específico de sucesiones.
+
+3. contacto-formulario.css
+   - Archivo nuevo.
+   - Estilos del formulario y de la página de agradecimiento.
+
+4. gracias.html
+   - Archivo nuevo.
+   - Página de confirmación luego del envío.
+
+INSTRUCCIONES:
+- Subir los cuatro archivos a la raíz del repositorio.
+- En GitHub, reemplazar guias.html y agregar los otros tres.
+- No reemplazar styles.css ni script.js.
+- FormSubmit enviará a: ab.juancaceres@gmail.com
+- IMPORTANTE: el primer envío genera un correo de activación de FormSubmit.
+  Hay que abrir ese correo y confirmar el formulario. Hasta hacerlo, los mensajes no se entregarán normalmente.
+- Después de publicar, realizar una prueba desde la web.
