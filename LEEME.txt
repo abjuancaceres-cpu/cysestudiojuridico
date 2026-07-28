@@ -1,29 +1,29 @@
-FASE 2 — GUÍA DE SUCESIONES + FORMULARIO DE CONTACTO
+ACTUALIZACIÓN DE FORMULARIOS + CONTACTO GENERAL
 
 Archivos incluidos:
-1. guias.html
-   - Reemplaza el archivo actual.
-   - La tarjeta de Sucesiones ahora enlaza a la nueva guía.
-   - Incorpora formulario general de contacto.
+- index.html: reemplaza el actual e incorpora el formulario en el Contacto general.
+- guias.html: reemplaza el actual; mejora el autocompletado.
+- guia-sucesiones-pba.html: reemplaza el actual; mejora el autocompletado.
+- contacto-formulario.css: reemplaza el actual; agrega estilos para Contacto de la Home.
+- gracias.html: se incluye sin cambios funcionales.
 
-2. guia-sucesiones-pba.html
-   - Archivo nuevo.
-   - Guía SEO completa de sucesiones en Provincia de Buenos Aires.
-   - Incluye formulario específico de sucesiones.
+CAMBIOS PRINCIPALES
+1. Los formularios ahora usan autocomplete="on".
+2. Nombre: autocomplete="name".
+3. Teléfono: autocomplete="tel" e inputmode="tel".
+4. Email: autocomplete="email" e inputmode="email".
+5. El campo antispam oculto usa autocomplete="new-password" para reducir autocompletados accidentales.
+6. La página principal ahora tiene formulario en la sección Contacto, además de WhatsApp y correos.
 
-3. contacto-formulario.css
-   - Archivo nuevo.
-   - Estilos del formulario y de la página de agradecimiento.
+SUBIDA
+Reemplazar en la raíz del repositorio:
+- index.html
+- guias.html
+- guia-sucesiones-pba.html
+- contacto-formulario.css
+- gracias.html
 
-4. gracias.html
-   - Archivo nuevo.
-   - Página de confirmación luego del envío.
-
-INSTRUCCIONES:
-- Subir los cuatro archivos a la raíz del repositorio.
-- En GitHub, reemplazar guias.html y agregar los otros tres.
-- No reemplazar styles.css ni script.js.
-- FormSubmit enviará a: ab.juancaceres@gmail.com
-- IMPORTANTE: el primer envío genera un correo de activación de FormSubmit.
-  Hay que abrir ese correo y confirmar el formulario. Hasta hacerlo, los mensajes no se entregarán normalmente.
-- Después de publicar, realizar una prueba desde la web.
+Después de publicar:
+- Probar en Chrome desde celular y computadora.
+- Verificar que aparezcan las sugerencias de autocompletado.
+- Enviar una consulta de prueba desde el Contacto general.

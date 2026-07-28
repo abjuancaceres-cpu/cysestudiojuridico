@@ -22,3 +22,10 @@
 .thanks-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px}
 @media(max-width:900px){.contact-form-section{grid-template-columns:1fr}.contact-form-copy{position:static}.contact-form-section--article{margin:0 18px 58px}.form-two-columns{grid-template-columns:1fr}}
 @media(max-width:560px){.contact-form-section{padding:58px 18px}.contact-form-section--article{padding:38px 18px;margin:0 0 48px;border-radius:0}.legal-contact-form{padding:22px 18px}.legal-contact-form .btn{width:100%}}
+.contact-form-section--home{background:linear-gradient(135deg,var(--green),#002d25);color:#fff}
+.contact-form-section--home .contact-form-copy h2{color:#fff}
+.contact-form-section--home .contact-form-copy p:not(.eyebrow){color:#edf6f2}
+.contact-form-section--home .contact-btn{background:#fff;color:var(--green);border:1px solid var(--gold)}
+.home-contact-details{margin-top:26px;padding-top:22px;border-top:1px solid rgba(255,255,255,.2)}
+.home-contact-details p{margin:7px 0!important}
+.home-contact-details a{color:var(--gold-soft);font-weight:700}
