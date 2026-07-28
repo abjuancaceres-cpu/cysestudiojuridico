@@ -174,5 +174,15 @@
   <footer class="site-footer"><div class="footer-brand"><img src="assets/logo-cys.png" alt="CyS Estudio Jurídico" width="159" height="159" /><div><strong>CyS Estudio Jurídico</strong><span>Cáceres &amp; Silva Abogados</span></div></div><div class="footer-links" aria-label="Enlaces del pie"><a href="servicios.html">¿Cómo podemos ayudarte?</a><a href="#nosotros">Nosotros</a><a href="#preguntas">Preguntas frecuentes</a><a href="#recomendaciones">Reseñas</a><a href="#contacto">Contacto</a></div><div class="footer-legal"><p>La información publicada es general y no reemplaza el asesoramiento profesional sobre un caso concreto.</p><p>© <span id="year"></span> CyS Estudio Jurídico. Todos los derechos reservados.</p></div></footer>
   <a class="float-whatsapp" href="https://wa.me/5491134005804?text=Hola%20CyS%20Estudio%20Jur%C3%ADdico%2C%20quiero%20solicitar%20una%20entrevista" target="_blank" rel="noopener noreferrer" aria-label="Solicitar una entrevista por WhatsApp"><span aria-hidden="true">WA</span></a>
   <script src="script.js"></script>
+  <script>
+    document.querySelectorAll('[data-scroll-top]').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        history.replaceState(null, '', window.location.pathname);
+      }, true);
+    });
+  </script>
 </body>
 </html>

@@ -1,29 +1,10 @@
-ACTUALIZACIÓN DE FORMULARIOS + CONTACTO GENERAL
+CORRECCIÓN DEL SCROLL AL INICIO
 
-Archivos incluidos:
-- index.html: reemplaza el actual e incorpora el formulario en el Contacto general.
-- guias.html: reemplaza el actual; mejora el autocompletado.
-- guia-sucesiones-pba.html: reemplaza el actual; mejora el autocompletado.
-- contacto-formulario.css: reemplaza el actual; agrega estilos para Contacto de la Home.
-- gracias.html: se incluye sin cambios funcionales.
+Reemplazá únicamente el archivo index.html de la raíz del sitio.
 
-CAMBIOS PRINCIPALES
-1. Los formularios ahora usan autocomplete="on".
-2. Nombre: autocomplete="name".
-3. Teléfono: autocomplete="tel" e inputmode="tel".
-4. Email: autocomplete="email" e inputmode="email".
-5. El campo antispam oculto usa autocomplete="new-password" para reducir autocompletados accidentales.
-6. La página principal ahora tiene formulario en la sección Contacto, además de WhatsApp y correos.
+La corrección evita que se ejecuten dos desplazamientos simultáneos al tocar:
+- Inicio
+- El logo
+- Cáceres & Silva Abogados
 
-SUBIDA
-Reemplazar en la raíz del repositorio:
-- index.html
-- guias.html
-- guia-sucesiones-pba.html
-- contacto-formulario.css
-- gracias.html
-
-Después de publicar:
-- Probar en Chrome desde celular y computadora.
-- Verificar que aparezcan las sugerencias de autocompletado.
-- Enviar una consulta de prueba desde el Contacto general.
+Después de publicar, actualizá la página con Ctrl + F5 y probá desde mitad de la Home.
