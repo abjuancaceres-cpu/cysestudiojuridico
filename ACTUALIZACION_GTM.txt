@@ -1,0 +1,23 @@
+ACTUALIZACIÓN GTM — CyS Estudio Jurídico
+
+Contenedor instalado: GTM-KQVCVG64
+Propiedad GA4 administrada desde GTM: G-NNQRCD7R03
+
+CAMBIOS REALIZADOS
+- Se instaló Google Tag Manager en todas las páginas HTML reales del sitio.
+- El script se agregó dentro de <head>.
+- El bloque noscript se agregó inmediatamente después de <body>.
+- Se retiró la instalación directa anterior de Google Analytics para evitar vistas de página duplicadas, ya que ahora la etiqueta Google Tag - GA4 se administra desde GTM.
+- No se modificaron estilos, textos, guías, imágenes, formularios ni JavaScript del sitio.
+
+PUBLICACIÓN
+1. Subir a GitHub todo el contenido de esta carpeta, reemplazando los archivos existentes.
+2. Confirmar el commit y esperar la publicación de GitHub Pages.
+3. En GTM, publicar el contenedor que contiene:
+   - Google Tag - GA4 / Initialization - All Pages
+   - GA4 - Click WhatsApp / Clic - WhatsApp
+4. Abrir la web, usar Ctrl+U y buscar GTM-KQVCVG64. Debe aparecer dos veces.
+5. Probar con Vista previa de GTM.
+
+IMPORTANTE
+La etiqueta Google Tag - GA4 debe estar publicada en GTM al publicar esta versión del sitio, porque el código directo de GA4 fue retirado para evitar duplicación.
