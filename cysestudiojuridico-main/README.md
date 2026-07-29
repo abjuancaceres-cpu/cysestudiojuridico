@@ -1,0 +1,85 @@
+# CyS Estudio Jurídico — Fase 1 final
+
+Versión con retratos profesionales, botones institucionales “Solicitar una entrevista”, corrección de navegación y sección de reseñas vinculada a Google Maps.
+
+Publicación: subir todos los archivos a la raíz del repositorio de GitHub Pages y reemplazar los existentes.
+
+Actualización: se eliminaron las líneas circulares decorativas de la portada y se dejó un fondo más limpio.
+
+
+Actualización: el botón «Solicitar una entrevista» del encabezado se oculta automáticamente cuando el botón principal de la portada está visible.
+
+
+## Fase 2 · Sprint 1
+
+Se incorporó `servicios.html`, con dos caminos principales:
+
+- Personas y Familias.
+- Empresas y Emprendedores.
+
+También se actualizaron los enlaces de Servicios en la página de inicio y el sitemap.
+
+
+## Ajuste de claridad en Servicios
+
+Se simplificó la página de Servicios:
+
+- Hero corto.
+- Dos caminos principales.
+- Tarjetas breves.
+- Un único llamado a la acción final.
+- Se retiraron FAQ, Biblioteca y explicaciones extensas de esta página.
+
+
+## Fase 2 · Nueva arquitectura
+
+La navegación de servicios ahora se divide en:
+
+1. `servicios.html`: elección entre Personas y Familias / Empresas y Emprendedores.
+2. `personas-familias.html`: situaciones personales y familiares.
+3. `empresas-emprendedores.html`: necesidades de empresas y emprendimientos.
+
+La página de inicio también muestra “¿Cómo podemos ayudarte?” en lugar de “Servicios”.
+
+
+## Fase 2 · Integración con la página principal
+
+- Se reemplazó la antigua grilla de servicios de la Home por dos grandes caminos:
+  Personas y Familias / Empresas y Emprendedores.
+- Se mantuvo una vía de orientación para quienes no saben qué área elegir.
+- Se ajustó el botón superior “Solicitar una entrevista”.
+- El menú hamburguesa ahora se activa antes para evitar desbordes en notebooks y zoom 100 %.
+
+
+## Fase 2 · Parte A · Landing Pages
+
+Se incorporaron seis páginas específicas:
+
+- `familia.html`
+- `sucesiones.html`
+- `jubilaciones.html`
+- `empresas.html`
+- `marcas.html`
+- `payroll.html`
+
+Las páginas intermedias de Personas y Empresas ahora pueden dirigir a estas landings.
+
+
+## Fase 2B
+Se incorporaron `guias.html` y `guia-cuota-alimentaria.html`, con buscador, filtros y plantilla editorial.
+
+
+## Fase 2D · Experiencia Premium
+
+Se incorporaron:
+
+- Entrada suave de cada página.
+- Aparición progresiva de secciones y tarjetas al hacer scroll.
+- Encabezado inteligente al desplazarse.
+- Microinteracciones de botones, tarjetas e imágenes.
+- Animación discreta del botón flotante de WhatsApp.
+- Apertura visual mejorada de preguntas frecuentes.
+- Compatibilidad con `prefers-reduced-motion`.
+- Scroll interno compensado para el encabezado fijo.
+
+No se agregaron librerías externas.
