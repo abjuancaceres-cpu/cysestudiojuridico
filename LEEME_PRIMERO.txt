@@ -1,0 +1,37 @@
+INSTALACIÓN DE GOOGLE TAG MANAGER — CyS ESTUDIO JURÍDICO
+Versión 1.0
+Contenedor: GTM-KQVCVG64
+
+OBJETIVO
+Instalar Google Tag Manager en todas las páginas HTML de la web sin reemplazar contenido, estilos, guías ni formularios.
+
+PASOS
+1. En GitHub, abrí el repositorio abjuancaceres-cpu/cysestudiojuridico.
+2. Presioná Code > Download ZIP.
+3. Descomprimí la carpeta descargada en tu computadora.
+4. Copiá dentro de esa carpeta estos cuatro archivos:
+   - INSTALAR_GTM.bat
+   - instalar_gtm.py
+   - VERIFICAR_GTM.bat
+   - verificar_gtm.py
+5. Hacé doble clic en INSTALAR_GTM.bat.
+6. El programa modificará solamente los archivos terminados en .html.
+7. Hacé doble clic en VERIFICAR_GTM.bat para confirmar que todos quedaron instalados.
+8. Subí a GitHub únicamente los archivos .html modificados. No es necesario subir los archivos .bak ni estos instaladores.
+9. Esperá la publicación de GitHub Pages.
+10. En Google Tag Manager presioná Vista previa e ingresá:
+    https://cysestudiojuridico.ar
+11. Cuando la prueba confirme que el contenedor se conecta, volvé a Tag Manager y presioná Enviar > Publicar.
+
+SEGURIDAD
+- Antes de modificar cada HTML, el instalador crea una copia con extensión .html.bak.
+- Si el código GTM ya está presente, no lo duplica.
+- No borra ni reemplaza las guías jurídicas.
+- No modifica styles.css, script.js, imágenes ni formularios.
+- El código existente de Google Analytics se conserva por ahora.
+
+IMPORTANTE SOBRE ANALYTICS
+La web ya tiene instalada directamente la etiqueta G-NNQRCD7R03. En esta primera etapa no la eliminamos. Google Tag Manager se instala como infraestructura para eventos y futuras conversiones. Más adelante podemos decidir si dejamos Analytics directo o lo administramos desde GTM, evitando duplicar la medición.
+
+SI WINDOWS INDICA QUE NO ENCUENTRA PYTHON
+Instalá Python desde python.org y, durante la instalación, marcá “Add Python to PATH”. Después ejecutá nuevamente INSTALAR_GTM.bat.

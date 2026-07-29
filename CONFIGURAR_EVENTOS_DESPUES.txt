@@ -1,0 +1,68 @@
+CONFIGURACIÓN POSTERIOR EN GOOGLE TAG MANAGER
+No realices estos pasos hasta que la instalación haya sido verificada con “Vista previa”.
+
+A. EVENTO CLICK_WHATSAPP
+
+1. En Tag Manager: Variables > Configurar.
+2. Activá estas variables integradas:
+   - Click URL
+   - Click Text
+   - Click Classes
+   - Page URL
+
+3. Activadores > Nuevo.
+   Nombre: Clic - WhatsApp
+   Tipo: Solo enlaces
+   Se activa en: Algunos clics en enlaces
+   Condición:
+   Click URL contiene wa.me
+
+4. Etiquetas > Nueva.
+   Nombre: GA4 - click_whatsapp
+   Tipo: Evento de Google Analytics: GA4
+   ID de medición: G-NNQRCD7R03
+   Nombre del evento: click_whatsapp
+   Parámetros recomendados:
+   - link_url = {{Click URL}}
+   - link_text = {{Click Text}}
+   - page_location = {{Page URL}}
+   Activador: Clic - WhatsApp
+
+B. EVENTO FORMULARIO_ENVIADO
+
+El formulario redirige a gracias.html después de enviarse correctamente.
+
+1. Activadores > Nuevo.
+   Nombre: Página - Gracias
+   Tipo: Vista de página
+   Se activa en: Algunas vistas de página
+   Condición:
+   Page Path contiene /gracias.html
+
+2. Etiquetas > Nueva.
+   Nombre: GA4 - formulario_enviado
+   Tipo: Evento de Google Analytics: GA4
+   ID de medición: G-NNQRCD7R03
+   Nombre del evento: formulario_enviado
+   Parámetro recomendado:
+   - page_location = {{Page URL}}
+   Activador: Página - Gracias
+
+C. PRUEBA
+
+1. Presioná Vista previa.
+2. Ingresá https://cysestudiojuridico.ar
+3. Tocá un botón de WhatsApp y comprobá que se active GA4 - click_whatsapp.
+4. Para probar el formulario, completalo y verificá que al llegar a gracias.html se active GA4 - formulario_enviado.
+5. Recién después presioná Enviar > Publicar.
+
+D. MARCAR COMO EVENTOS CLAVE EN ANALYTICS
+
+Una vez que Analytics haya recibido los eventos:
+1. Analytics > Administrar.
+2. Visualización de datos > Eventos.
+3. Buscá click_whatsapp y formulario_enviado.
+4. Marcá ambos como eventos clave.
+
+NOTA
+Los nombres están en minúsculas y sin espacios porque es el formato recomendado para eventos de GA4.
